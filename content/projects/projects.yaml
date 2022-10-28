@@ -25,19 +25,3 @@
   services:
     - ui + ux
     - prototyping
-
-- title: 'Bottle Barn'
-  title_detail: 'Bottle Barn Wine & Spirits'
-  slug: 'bottle-barn'
-  year: 2018
-  desc: Bottle Barn is Sonoma County's largest discount wine and spirits shop. Their goal was to bring their shop online. We designed them a humble identity and a custom Shopify theme and delivered a fully functional, ent to end digital platform to sell wine and keep in touch with their shoppers.
-  industry: 'ecommerce'
-  category: 'design + development'
-  color: '#82726b'
-  images: 'bottle-barn'
-  cover: './bottle-barn/cover.jpg'
-  services:
-    - logo identity
-    - ui + ux
-    - dev
-  website: 'bottlebarn.com'
