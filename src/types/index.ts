@@ -9,22 +9,6 @@ export interface ImageNode {
   }
 }
 
-// Dribbble Shape
-// ___________________________________________________________________
-
-export type DribbbleShape = {
-  content: {
-    edges: {
-      node: {
-        name: string
-        childImageSharp: {
-          gatsbyImageData: IGatsbyImageData
-        }
-      }
-    }[]
-  }
-}
-
 // Project Shape
 // ___________________________________________________________________
 
