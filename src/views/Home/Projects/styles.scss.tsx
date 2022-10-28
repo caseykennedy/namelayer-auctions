@@ -20,12 +20,18 @@ export const Projects = styled(motion.div)`
     width: 100%;
 
     @media ${breakpoint.tablet} {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   .project {
-    margin-bottom: var(--space-xl);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: var(--gutter);
+    margin-bottom: var(--space-gutter);
+
+    background: var(--color-bg-dark);
+    border-radius: var(--radius);
 
     &__figure {
       /* border-radius: var(--radius-sm); */

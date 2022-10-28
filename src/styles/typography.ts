@@ -213,6 +213,7 @@ const Typography = css`
   h1,
   .text-h1 {
     font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
   }
 
   h2,
@@ -250,7 +251,7 @@ const Typography = css`
   p {
     ${textCrop(1, 0.05, -0.05)}
 
-    font-size: var(--text-md);
+    font-size: var(--text-base-size);
     line-height: var(--body-line-height);
 
     &:not(:last-child) {

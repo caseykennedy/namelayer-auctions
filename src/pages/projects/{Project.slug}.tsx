@@ -13,7 +13,7 @@ import { ProjectShape } from '../../types'
 
 const ProjectPage = (props: ProjectShape) => {
   const { data } = props
-  const { project, images } = data
+  const { project } = data
   console.log('project:', project)
   return (
     <>
@@ -63,7 +63,6 @@ export const query = graphql`
       slug
       title
       title_detail
-      website
     }
     images: allFile(filter: { relativeDirectory: { eq: $slug } }) {
       edges {

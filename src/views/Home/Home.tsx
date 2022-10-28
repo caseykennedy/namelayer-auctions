@@ -19,15 +19,16 @@ import * as S from './styles.scss'
 const Home = () => (
   <S.Home>
     <Hero />
-    <Marquee>
-      <div>web + app dev</div>
-      <div>ui + ux</div>
-      <div>design systems</div>
-      <div>wireframing</div>
-      <div>prototyping</div>
-    </Marquee>
     <Projects />
     <Sites />
+    <Marquee>
+      <div>x/</div>
+      <div>🤙</div>
+      <div>crypto/</div>
+      <div>👽</div>
+      <div>meta/</div>
+      <div>🌊</div>
+    </Marquee>
   </S.Home>
 )
 

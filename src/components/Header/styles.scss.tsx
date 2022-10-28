@@ -6,15 +6,11 @@ import breakpoint from '../../utils/breakpoint'
 // ___________________________________________________________________
 
 export const Header = styled.header`
-  background: var(--color-bg);
-  box-shadow: 0px 15px 30px 10px var(--color-bg);
-  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 65%); */
-  /* backdrop-filter: blur(10px); */
-  /* opacity: 0.8; */
+  background: var(--color-bg-dark);
 
   display: flex;
   flex-flow: row nowrap;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
 
   position: sticky;
@@ -36,6 +32,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--color-text);
 
     @media ${breakpoint.tablet} {
       flex-flow: column nowrap;

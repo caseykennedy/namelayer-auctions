@@ -14,22 +14,8 @@ import * as S from './styles.scss'
 // ___________________________________________________________________
 
 const Header = () => {
-  const [theme, setTheme] = useState('lightMode')
   const [isNavOpen, setNavOpen] = useState(false)
-
   const toggleMenu = () => setNavOpen(!isNavOpen)
-  const toggleTheme = () => {
-    setTheme(theme === 'default' ? 'lightMode' : 'default')
-    document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
-  }
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem('theme')
-    if (localTheme) {
-      document.documentElement.setAttribute('data-theme', localTheme)
-    }
-  }, [])
 
   return (
     <>
@@ -37,7 +23,7 @@ const Header = () => {
         <div className="logo">
           <div className="symbol">
             <Link to="/" aria-label="Back to index page">
-              tetra/
+              Namelayer Auctions
             </Link>
           </div>
         </div>
@@ -50,14 +36,6 @@ const Header = () => {
             className="info-toggle"
           >
             info
-          </button>
-          <button
-            type="button"
-            onClick={toggleTheme}
-            onKeyDown={toggleTheme}
-            className="theme-toggle"
-          >
-            ◒
           </button>
         </div>
       </S.Header>

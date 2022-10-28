@@ -119,13 +119,7 @@ const Projects = () => {
           >
             <Link to={`/projects/${item.slug}`}>
               <motion.div variants={imageVariants}>
-                <GatsbyImage
-                  image={item.cover.childImageSharp.gatsbyImageData}
-                  objectFit="cover"
-                  objectPosition="50% 50%"
-                  alt="alt"
-                  className="project__figure"
-                />
+                <div>item detail</div>
               </motion.div>
             </Link>
             <div className="project__meta">

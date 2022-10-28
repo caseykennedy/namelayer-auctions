@@ -1,4 +1,4 @@
-- title: 'Cannavative'
+- title: "emoji's & symbols: block 1"
   title_detail: 'Cannavative Cannabis Extracts'
   slug: 'cannavative'
   year: 2018
@@ -12,7 +12,7 @@
     - logo identity
     - packaging
 
-- title: 'Blackbird'
+- title: "emoji's & symbols: block 2"
   title_detail: 'Blackbird Cannabis Logistics'
   slug: 'blackbird'
   year: 2018
@@ -25,3 +25,58 @@
   services:
     - ui + ux
     - prototyping
+
+- title: "emoji's & symbols: block 1"
+  title_detail: 'Cannavative Cannabis Extracts'
+  slug: 'cannavative'
+  year: 2018
+  desc: 'I needed a creative agency at the top of design thinking and leading edge in technical capabilities. core37 was a perfect match. They delivered the perfect end to end digital platform, on time and in full. I loved their creativity, their high quality standards and the strong partnership with my team.'
+  industry: 'cannabis'
+  category: 'design'
+  color: 'green'
+  images: 'cannavative'
+  cover: './cannavative/cover2.jpg'
+  services:
+    - logo identity
+    - packaging
+- title: "emoji's & symbols: block 1"
+  title_detail: 'Cannavative Cannabis Extracts'
+  slug: 'cannavative'
+  year: 2018
+  desc: 'I needed a creative agency at the top of design thinking and leading edge in technical capabilities. core37 was a perfect match. They delivered the perfect end to end digital platform, on time and in full. I loved their creativity, their high quality standards and the strong partnership with my team.'
+  industry: 'cannabis'
+  category: 'design'
+  color: 'green'
+  images: 'cannavative'
+  cover: './cannavative/cover2.jpg'
+  services:
+    - logo identity
+    - packaging
+
+- title: "emoji's & symbols: block 2"
+  title_detail: 'Blackbird Cannabis Logistics'
+  slug: 'blackbird'
+  year: 2018
+  desc: 'I needed a creative agency at the top of design thinking and leading edge in technical capabilities. core37 was a perfect match. They delivered the perfect end to end digital platform, on time and in full. I loved their creativity, their high quality standards and the strong partnership with my team.'
+  industry: 'cannabis'
+  category: '2017'
+  color: 'white'
+  images: 'blackbird'
+  cover: './blackbird/cover.png'
+  services:
+    - ui + ux
+    - prototyping
+
+- title: "emoji's & symbols: block 1"
+  title_detail: 'Cannavative Cannabis Extracts'
+  slug: 'cannavative'
+  year: 2018
+  desc: 'I needed a creative agency at the top of design thinking and leading edge in technical capabilities. core37 was a perfect match. They delivered the perfect end to end digital platform, on time and in full. I loved their creativity, their high quality standards and the strong partnership with my team.'
+  industry: 'cannabis'
+  category: 'design'
+  color: 'green'
+  images: 'cannavative'
+  cover: './cannavative/cover2.jpg'
+  services:
+    - logo identity
+    - packaging

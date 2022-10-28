@@ -58,7 +58,6 @@ export interface IProjects {
         slug: string
         title: string
         title_detail: string
-        website: string
         year: number
         cover: {
           childImageSharp: {

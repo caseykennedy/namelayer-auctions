@@ -13,6 +13,18 @@ const useProjects = () => {
           node {
             category
             color
+            cover {
+              name
+              childImageSharp {
+                gatsbyImageData(
+                  aspectRatio: 1.444
+                  backgroundColor: ""
+                  formats: WEBP
+                  layout: FULL_WIDTH
+                  placeholder: DOMINANT_COLOR
+                )
+              }
+            }
             desc
             id
             images
@@ -21,18 +33,6 @@ const useProjects = () => {
             slug
             title
             title_detail
-            website
-            year
-            cover {
-              childImageSharp {
-                gatsbyImageData(
-                  aspectRatio: 1.5
-                  layout: FULL_WIDTH
-                  formats: [AUTO, AVIF, WEBP]
-                  placeholder: DOMINANT_COLOR
-                )
-              }
-            }
           }
           next {
             id
