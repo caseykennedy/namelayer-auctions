@@ -8,6 +8,8 @@ export const Hero = styled.div`
   display: flex;
   flex-flow: column nowrap;
   min-height: 25vh;
+  background: var(--color-bg-dark);
+  border-radius: var(--radius);
 
   @media ${breakpoint.tablet} {
     flex-flow: row nowrap;

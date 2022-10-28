@@ -8,7 +8,6 @@ import { breakpoint } from '../../../styles/mixins'
 
 export const Projects = styled(motion.div)`
   display: flex;
-  padding: 0 var(--gutter);
   margin-bottom: var(--gutter);
 
   .project-grid {
@@ -32,6 +31,7 @@ export const Projects = styled(motion.div)`
 
     background: var(--color-bg-dark);
     border-radius: var(--radius);
+    box-shadow: var(--shadow-xs);
 
     &__figure {
       /* border-radius: var(--radius-sm); */

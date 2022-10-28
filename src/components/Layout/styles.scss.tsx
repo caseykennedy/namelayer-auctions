@@ -56,5 +56,6 @@ export const Content = styled.div`
   column-gap: var(--gutter);
   gap: var(--gutter); */
 
+  /* max-width: var(--site-width-max); */
   width: 100%;
 `

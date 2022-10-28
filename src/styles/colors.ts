@@ -20,7 +20,7 @@ const Colors = css`
     --color-text-muted: hsl(245, 8%, 58%);
     --color-heading: hsl(245, 8%, 92%);
     // border
-    --color-border: hsl(245, 8%, 58%);
+    --color-border: hsl(240, 5%, 24%);
   }
 `
 

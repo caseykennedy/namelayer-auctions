@@ -15,6 +15,12 @@ const Spacing = css`
     --space-unit: 1rem;
     --gutter: var(--space-lg);
 
+    // site layout
+    --site-width: 100%;
+    --site-width-max: 1440px;
+    --site-width-mid: 1100px;
+    --site-width-min: 750px;
+
     @media ${breakpoint.tablet} {
       /* --gutter: var(--space-xl); */
     }

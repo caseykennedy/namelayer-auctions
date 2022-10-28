@@ -18,17 +18,22 @@ import * as S from './styles.scss'
 
 const Home = () => (
   <S.Home>
-    <Hero />
-    <Projects />
-    <Sites />
-    <Marquee>
-      <div>x/</div>
-      <div>🤙</div>
-      <div>crypto/</div>
-      <div>👽</div>
-      <div>meta/</div>
-      <div>🌊</div>
-    </Marquee>
+    <Section>
+      <Hero />
+    </Section>
+    <Section>
+      <Marquee>
+        <div>x/</div>
+        <div>🤙</div>
+        <div>crypto/</div>
+        <div>👽</div>
+        <div>meta/</div>
+        <div>🌊</div>
+      </Marquee>
+    </Section>
+    <Section>
+      <Projects />
+    </Section>
   </S.Home>
 )
 
