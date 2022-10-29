@@ -9,20 +9,9 @@
   images: 'xn--cr8h'
   released: true
 
-- title: 'Robot'
-  domain: '🤖'
-  desc: 'Robot head'
-  slug: 'xn--yp9h'
-  punycode: 'xn--yp9h'
-  unicode: 'U+1F916'
-  category: 'emoji'
-  color: 'blue'
-  images: 'xn--yp9h'
-  released: true
-
-- title: 'Alien'
-  domain: '👽'
-  desc: 'Alien head'
+- title: 'Cheese'
+  domain: '🧀'
+  desc: 'Cheese wedge'
   slug: 'xn--cr8h'
   punycode: 'xn--cr8h'
   unicode: 'U+1F47D'
@@ -42,8 +31,8 @@
   images: 'xn--yp9h'
   released: true
 
-- title: 'Alien'
-  domain: '👽'
+- title: 'Hang Loose'
+  domain: '🤙'
   desc: 'Alien head'
   slug: 'xn--cr8h'
   punycode: 'xn--cr8h'
@@ -53,9 +42,20 @@
   images: 'xn--cr8h'
   released: true
 
-- title: 'Robot'
-  domain: '🤖'
-  desc: 'Robot head'
+- title: 'Wave'
+  domain: '🌊'
+  desc: 'Japanese wave'
+  slug: 'xn--yp9h'
+  punycode: 'xn--yp9h'
+  unicode: 'U+1F916'
+  category: 'emoji'
+  color: 'blue'
+  images: 'xn--yp9h'
+  released: true
+
+- title: 'Ghost'
+  domain: '👻'
+  desc: 'Ghost boo'
   slug: 'xn--yp9h'
   punycode: 'xn--yp9h'
   unicode: 'U+1F916'
