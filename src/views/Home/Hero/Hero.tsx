@@ -17,13 +17,14 @@ const Hero = () => {
   const nevadaTime = useDate()
   return (
     <S.Hero>
-      <div className="billboard">
-        <h1>Handshake domain name auctions.</h1>
-        <p>
-          Single emoji, emoji combos, characters, glyphs and more. Sign up to
-          participate.
-        </p>
-      </div>
+      <h1>
+        Handshake <br />
+        domain name auctions.
+      </h1>
+      <p>
+        Single emoji, emoji combos, characters, glyphs and more. Sign up to
+        participate.
+      </p>
     </S.Hero>
   )
 }

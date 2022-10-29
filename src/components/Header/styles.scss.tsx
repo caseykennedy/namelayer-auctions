@@ -7,6 +7,7 @@ import breakpoint from '../../utils/breakpoint'
 
 export const Header = styled.header`
   background: var(--color-bg-dark);
+  /* border-bottom: var(--border); */
 
   display: flex;
   flex-flow: row nowrap;

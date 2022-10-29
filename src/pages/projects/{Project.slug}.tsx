@@ -7,21 +7,21 @@ import { graphql } from 'gatsby'
 import SEO from '../../components/SEO'
 import ProjectDetail from '../../templates/ProjectDetail'
 
-import { ProjectShape } from '../../types'
+import { DomainDataShape } from '../../types'
 
 // ___________________________________________________________________
 
-const ProjectPage = (props: ProjectShape) => {
+const ProjectPage = (props: DomainDataShape) => {
   const { data } = props
-  const { project } = data
-  console.log('project:', project)
+  const { domain } = data
+  console.log('project:', domain)
   return (
     <>
       <SEO
-        pathname={project.slug}
-        title={`${project.title_detail} | tetra`}
-        desc={project.desc}
-        node={project.parent}
+        pathname={domain.slug}
+        title={`${domain.title} | Namelayer Auctions`}
+        desc={domain.desc}
+        // node={domain.parent}
       />
       <ProjectDetail data={data} />
     </>
@@ -33,50 +33,22 @@ export default ProjectPage
 // ___________________________________________________________________
 
 export const query = graphql`
-  query ($id: String!, $slug: String!) {
-    project(id: { eq: $id }) {
+  query ($id: String!) {
+    domain: project(id: { eq: $id }) {
+      title
+      domain
+      desc
+      slug
+      punycode
+      unicode
       category
       color
-      cover {
-        name
-        childImageSharp {
-          gatsbyImageData(
-            aspectRatio: 1.444
-            backgroundColor: ""
-            formats: WEBP
-            layout: FULL_WIDTH
-            placeholder: DOMINANT_COLOR
-          )
-        }
-      }
-      desc
-      id
       images
-      industry
+      released
       parent {
         ... on File {
           modifiedTime
           birthTime
-        }
-      }
-      services
-      slug
-      title
-      title_detail
-    }
-    images: allFile(filter: { relativeDirectory: { eq: $slug } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData(
-              aspectRatio: 1.444
-              backgroundColor: ""
-              formats: WEBP
-              layout: FULL_WIDTH
-              placeholder: DOMINANT_COLOR
-            )
-          }
         }
       }
     }

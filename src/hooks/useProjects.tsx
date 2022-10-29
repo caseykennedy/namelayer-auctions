@@ -1,38 +1,32 @@
 // useProjects hook
 
 import { graphql, useStaticQuery } from 'gatsby'
-import { IProjects } from '../types'
+import { IDomains } from '../types'
 
 // ___________________________________________________________________
 
-const useProjects = () => {
-  const data = useStaticQuery<IProjects>(graphql`
+const useDomains = () => {
+  const data = useStaticQuery<IDomains>(graphql`
     query AllProjectsQuery {
-      projects: allProject {
+      domains: allProject {
         edges {
           node {
+            title
+            domain
+            desc
+            slug
+            punycode
+            unicode
             category
             color
-            cover {
-              name
-              childImageSharp {
-                gatsbyImageData(
-                  aspectRatio: 1.444
-                  backgroundColor: ""
-                  formats: WEBP
-                  layout: FULL_WIDTH
-                  placeholder: DOMINANT_COLOR
-                )
+            images
+            released
+            parent {
+              ... on File {
+                modifiedTime
+                birthTime
               }
             }
-            desc
-            id
-            images
-            industry
-            services
-            slug
-            title
-            title_detail
           }
           next {
             id
@@ -42,7 +36,7 @@ const useProjects = () => {
     }
   `)
 
-  return data.projects.edges
+  return data.domains.edges
 }
 
-export default useProjects
+export default useDomains

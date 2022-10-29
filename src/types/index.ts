@@ -13,57 +13,45 @@ export interface ImageNode {
 // ___________________________________________________________________
 
 export type ProjectShapeProject = {
-  title_detail: string
   title: string
-  color: string
-  category: string
+  domain: string
   desc: string
-  industry: string
-  services: string[]
   slug: string
-  website: string
-  year: number
+  punycode: string
+  unicode: string
+  category: string
+  color: string
+  images: string
+  released: boolean
   parent: {
     modifiedTime: string
     birthTime: string
   }
-  cover: {
-    name: string
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData
-    }
-  }
 }
 
-export type ProjectShape = {
+export type DomainDataShape = {
   data: {
-    project: ProjectShapeProject
+    domain: ProjectShapeProject
     images: {
       edges: ImageNode[]
     }
   }
 }
 
-export interface IProjects {
-  projects: {
+export interface IDomains {
+  domains: {
     edges: {
       node: {
+        title: string
+        domain: string
+        desc: string
+        slug: string
+        punycode: string
+        unicode: string
         category: string
         color: string
-        desc: string
-        id: string
         images: string
-        industry: string
-        services: string[]
-        slug: string
-        title: string
-        title_detail: string
-        year: number
-        cover: {
-          childImageSharp: {
-            gatsbyImageData: IGatsbyImageData
-          }
-        }
+        released: boolean
       }
       next: {
         id: string

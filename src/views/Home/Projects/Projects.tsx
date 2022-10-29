@@ -6,12 +6,6 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-// types
-import { ProjectShapeProject } from '../../../types'
-
-// Components
-// import Icon from '../../../components/Icons'
-
 // Hooks
 import useProjects from '../../../hooks/useProjects'
 
@@ -32,32 +26,6 @@ const imageVariants = {
     transition: {
       y: { stiffness: 400, velocity: -400, duration: 0.25, ease: 'easeInOut' },
     },
-  },
-}
-
-const itemVariants = {
-  open: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      y: { stiffness: 400, velocity: -400, duration: 0.25, ease: 'easeInOut' },
-    },
-  },
-  closed: {
-    y: 25,
-    opacity: 0,
-    transition: {
-      y: { stiffness: 400, velocity: -400, duration: 0.25, ease: 'easeInOut' },
-    },
-  },
-}
-
-const listVariants = {
-  open: {
-    transition: { staggerChildren: 0.05, delayChildren: 0.03 },
-  },
-  closed: {
-    transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
 }
 
@@ -108,35 +76,26 @@ const Projects = () => {
       ref={ref}
     >
       <div className="project-grid">
-        {projects.map(({ node: item }) => (
+        {projects.map(({ node: domain }) => (
           <motion.div
             variants={polyVariant}
             initial={['closed', 'large']}
             whileHover={['open', 'small']}
             animate={['closed', 'large']}
-            key={item.id}
+            key={domain.title}
             className="project"
           >
-            <Link to={`/projects/${item.slug}`}>
-              <motion.div variants={imageVariants}>
-                <div>item detail</div>
-              </motion.div>
-            </Link>
-            <div className="project__meta">
-              <div className="title">
-                {/* {item.year} */}
-                <span>
-                  <strong>{item.title}</strong>
-                </span>
+            <Link to={`/projects/${domain.slug}`}>
+              <div className="project__meta">
+                <motion.div className="domain" variants={imageVariants}>
+                  {domain.domain}
+                </motion.div>
+                <div className="title">
+                  <div>{domain.punycode}</div>
+                  {domain.title}
+                </div>
               </div>
-              <motion.ul variants={listVariants}>
-                {item.services.map((service, idx) => (
-                  <motion.li variants={itemVariants} key={idx}>
-                    {service}
-                  </motion.li>
-                ))}
-              </motion.ul>
-            </div>
+            </Link>
           </motion.div>
         ))}
       </div>

@@ -18,7 +18,7 @@ import * as S from './styles.scss'
 
 const Home = () => (
   <S.Home>
-    <Section>
+    <Section bg="var(--color-bg-dark)">
       <Hero />
     </Section>
     <Section>

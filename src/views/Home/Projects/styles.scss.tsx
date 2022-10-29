@@ -40,17 +40,26 @@ export const Projects = styled(motion.div)`
 
     &__meta {
       display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
+      flex-flow: column nowrap;
       justify-content: space-between;
       gap: var(--space-xxxl);
       /* padding-right: var(--space-xxl); */
 
+      .domain {
+        font-size: var(--text-xxl);
+      }
+
       .title {
-        span {
-          /* color: var(--color-white); */
-          /* margin-left: var(--gutter); */
-          transition: color var(--transition);
+        display: flex;
+        flex-flow: column nowrap;
+        /* color: var(--color-white); */
+        font-size: var(--text-xl);
+        margin-top: var(--gutter);
+        transition: color var(--transition);
+
+        div {
+          color: var(--color-text-muted);
+          font-size: var(--text-sm);
         }
       }
 

@@ -12,7 +12,7 @@ const Spacing = css`
   // --------------------------------
 
   :root {
-    --space-unit: 1rem;
+    --space-unit: 1.25rem;
     --gutter: var(--space-lg);
 
     // site layout

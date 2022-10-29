@@ -212,7 +212,7 @@ const Typography = css`
 
   h1,
   .text-h1 {
-    font-size: var(--text-lg);
+    font-size: var(--text-xxxl);
     margin-bottom: var(--space-md);
   }
 
