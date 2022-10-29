@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import { ProjectShape, ImageNode } from '../../types'
+import { DomainDataShape, ImageNode } from '../../types'
 import * as S from './styles.scss'
 
 // ___________________________________________________________________
@@ -29,25 +29,17 @@ const Gallery = ({ images }: GalleryProps) => {
   )
 }
 
-const ProjectDetail = ({ data }: ProjectShape) => {
-  const images = data.images.edges || []
+const ProjectDetail = ({ data }: DomainDataShape) => {
+  // const images = data.images.edges || []
+  console.log('images:')
   return (
     <S.ProjectDetail>
       <div className="intro">
-        <h1>{data.project.title}</h1>
-        <div>
-          {data.project.services.map((service, idx) => (
-            <span key={idx} className="pill">
-              {service}
-            </span>
-          ))}
-        </div>
+        <h1>{data.domain.title}</h1>
       </div>
 
-      <Gallery images={images} />
-
       <div className="study">
-        <p>{data.project.desc}</p>
+        <p>{data.domain.desc}</p>
       </div>
     </S.ProjectDetail>
   )
