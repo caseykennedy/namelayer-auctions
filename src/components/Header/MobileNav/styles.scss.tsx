@@ -40,12 +40,18 @@ export const MobileNav = styled(motion.ul)`
     backdrop-filter: blur(5px);
     background: var(--color-bg-dark);
     border: var(--border);
-    border-radius: var(--radius);
-    opacity: 0.825;
+    border-radius: var(--radius-xs);
+    opacity: 0.875;
     margin: 0;
-    padding: var(--space-xxl);
-    height: 75vh;
-    width: 75vw;
+    padding: var(--gutter);
+    height: 92vh;
+    width: 92vw;
+
+    @media ${breakpoint.tablet} {
+      padding: var(--gutter);
+      height: 75vh;
+      width: 75vw;
+    }
 
     div {
       flex: 1;

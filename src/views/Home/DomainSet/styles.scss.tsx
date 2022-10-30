@@ -1,4 +1,4 @@
-// Projects styles:
+// DomainSet styles:
 
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
@@ -6,15 +6,26 @@ import { breakpoint } from '../../../styles/mixins'
 
 // ___________________________________________________________________
 
-export const Projects = styled(motion.div)`
-  display: flex;
-  margin-bottom: var(--gutter);
+export const DomainSet = styled(motion.div)`
+  h2 {
+    font-size: var(--text-base-size);
+
+    span {
+      color: var(--color-text-muted);
+      font-weight: 400;
+    }
+  }
+
+  p {
+    color: var(--color-text-muted);
+    font-size: var(--text-md);
+  }
 
   .project-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
-    gap: var(--gutter);
+    gap: var(--space-xxs);
 
     width: 100%;
 
@@ -27,10 +38,9 @@ export const Projects = styled(motion.div)`
     display: flex;
     flex-flow: column nowrap;
     padding: var(--gutter);
-    margin-bottom: var(--space-gutter);
 
     background: var(--color-bg-dark);
-    border-radius: var(--radius);
+    border-radius: var(--radius-xs);
     box-shadow: var(--shadow-xs);
 
     &__figure {
@@ -102,4 +112,4 @@ export const Projects = styled(motion.div)`
   }
 `
 
-export default Projects
+export default DomainSet

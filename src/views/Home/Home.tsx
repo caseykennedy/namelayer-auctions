@@ -8,7 +8,7 @@ import Marquee from '../../components/Marquee'
 
 // Sections
 import Hero from './Hero'
-import Projects from './Projects'
+import DomainSet from './DomainSet'
 import Sites from './Sites'
 
 // Styles
@@ -21,7 +21,7 @@ const Home = () => (
     <Section bg="var(--color-bg-dark)">
       <Hero />
     </Section>
-    <Section>
+    <Section bg="var(--color-bg-dark)" border={true} pt="var(--gutter)">
       <Marquee>
         <div>x/</div>
         <div>🤙</div>
@@ -32,7 +32,10 @@ const Home = () => (
       </Marquee>
     </Section>
     <Section>
-      <Projects />
+      <DomainSet />
+    </Section>
+    <Section border={true}>
+      asdf
     </Section>
   </S.Home>
 )

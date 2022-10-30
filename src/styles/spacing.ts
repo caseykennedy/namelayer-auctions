@@ -13,7 +13,7 @@ const Spacing = css`
 
   :root {
     --space-unit: 1.25rem;
-    --gutter: var(--space-lg);
+    --gutter: var(--space-sm);
 
     // site layout
     --site-width: 100%;
@@ -22,7 +22,7 @@ const Spacing = css`
     --site-width-min: 750px;
 
     @media ${breakpoint.tablet} {
-      /* --gutter: var(--space-xl); */
+      --gutter: var(--space-lg);
     }
   }
 

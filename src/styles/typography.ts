@@ -62,7 +62,7 @@ const Typography = css`
 
     // line-height
     --body-line-height: 1.15;
-    --heading-line-height: 1.15;
+    --heading-line-height: 1;
 
     // letter-spacing
     --heading-letter-spacing: 0em;
@@ -212,14 +212,18 @@ const Typography = css`
 
   h1,
   .text-h1 {
-    font-size: var(--text-xxxl);
-    margin-bottom: var(--space-md);
+    font-size: var(--text-xxl);
+    margin-bottom: var(--space-lg);
+
+    @media ${breakpoint.tablet} {
+      font-size: var(--text-xxxxl);
+    }
   }
 
   h2,
   .text-h2 {
     font-size: var(--text-lg);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--gutter);
   }
 
   h3,

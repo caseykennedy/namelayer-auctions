@@ -52,7 +52,7 @@ const staggerItems = {
   },
 }
 
-const Projects = () => {
+const DomainSet = () => {
   const projects = useProjects()
   const controls = useAnimation()
   const [ref, inView] = useInView({
@@ -69,12 +69,20 @@ const Projects = () => {
   }, [controls, inView])
 
   return (
-    <S.Projects
+    <S.DomainSet
       animate={controls}
       initial="hidden"
       variants={staggerItems}
       ref={ref}
     >
+      <div>
+        <h2>
+          <span>up for auction</span>
+          <br />
+          emoji&apos;s + symbols
+        </h2>
+        {/* <p>November 17, 2022</p> */}
+      </div>
       <div className="project-grid">
         {projects.map(({ node: domain }) => (
           <motion.div
@@ -99,8 +107,8 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
-    </S.Projects>
+    </S.DomainSet>
   )
 }
 
-export default Projects
+export default DomainSet
