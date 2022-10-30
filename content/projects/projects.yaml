@@ -63,3 +63,25 @@
   color: 'blue'
   images: 'xn--yp9h'
   released: true
+
+- title: 'Cheese'
+  domain: '🧀'
+  desc: 'Cheese wedge'
+  slug: 'xn--cr8h'
+  punycode: 'xn--cr8h'
+  unicode: 'U+1F47D'
+  category: 'emoji'
+  color: 'green'
+  images: 'xn--cr8h'
+  released: true
+
+- title: 'Robot'
+  domain: '🤖'
+  desc: 'Robot head'
+  slug: 'xn--yp9h'
+  punycode: 'xn--yp9h'
+  unicode: 'U+1F916'
+  category: 'emoji'
+  color: 'blue'
+  images: 'xn--yp9h'
+  released: true

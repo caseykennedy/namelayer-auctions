@@ -13,14 +13,14 @@ const Colors = css`
     --color-white: hsl(0, 0%, 100%);
 
     // background
-    --color-bg: hsl(240, 5%, 17%);
+    --color-bg: hsl(240, 5%, 10%);
     --color-bg-dark: hsl(240, 4%, 5%);
     // typography
     --color-text: hsl(245, 8%, 78%);
     --color-text-muted: hsl(245, 8%, 58%);
     --color-heading: hsl(245, 8%, 92%);
     // border
-    --color-border: hsl(240, 5%, 24%);
+    --color-border: hsl(240, 5%, 16%);
   }
 `
 

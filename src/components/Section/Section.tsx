@@ -57,7 +57,7 @@ export default Section
 // ___________________________________________________________________
 
 const defaultProps = {
-  pt: 'var(--space-xxxl)',
+  pt: 'var(--gutter)',
   pb: 'var(--gutter)',
   pr: 'var(--gutter)',
   pl: 'var(--gutter)',

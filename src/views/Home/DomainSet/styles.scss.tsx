@@ -25,12 +25,16 @@ export const DomainSet = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
-    gap: var(--space-xxs);
+    gap: 4px;
 
     width: 100%;
 
     @media ${breakpoint.tablet} {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media ${breakpoint.desktop} {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 

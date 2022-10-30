@@ -31,7 +31,7 @@ const Home = () => (
         <div>🌊</div>
       </Marquee>
     </Section>
-    <Section>
+    <Section border={true}>
       <DomainSet />
     </Section>
     <Section border={true}>

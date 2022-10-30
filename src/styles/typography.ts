@@ -223,7 +223,7 @@ const Typography = css`
   h2,
   .text-h2 {
     font-size: var(--text-lg);
-    margin-bottom: var(--gutter);
+    margin-bottom: var(--space-xxxl);
   }
 
   h3,
